@@ -1,0 +1,458 @@
+/* Section one */
+
+.container-fluid {
+  padding: 0;
+  position: relative;
+}
+
+.leftHeroCol, .midHeroCol {
+  background-color: #F8F8F8;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  max-width: 27rem;
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+.headingDescription {
+  font-size: 1.625rem;
+  font-weight: 300;
+  max-width: 27rem;
+}
+
+.midHeroCol img {
+  position: relative;
+  transition: transform .2s;
+}
+.midHeroCol img:hover {
+  transform: scale(1.05);
+}
+
+form {
+  position: relative;
+  max-width: 25.75rem;
+  margin-top: 5rem !important;
+}
+
+.formHeader {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.iti {
+  width: 100%;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #FFCC00;
+}
+
+.form-check-input {
+  width: 2em;
+  border-color: #FFCC00;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+  border-color: #FFCC00;
+}
+
+.form-check-input:checked {
+  background-color: #FFCC00;
+  border-color: #FFCC00;
+}
+
+form label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.buttonContinue {
+  width: 100%;
+  background-color: #FFCC00;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+
+.frame {
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+}
+
+.frame img {
+  width: 100%;
+}
+
+.blackFriday {
+  position: absolute;
+  bottom: 0;
+  background-color: #252525;
+  width: 50%;
+  height: 10rem;
+  font-size: 4rem;
+  font-weight: 700;
+  padding-left: 10rem;
+}
+
+.signup {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #252525;
+  width: 50%;
+  height: 10rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  padding-left: 25rem;
+}
+
+.blackFriday,
+.signup p {
+  color: #FFCC00;
+  text-decoration: none;
+  text-align: center;
+}
+
+.blackFriday span {
+  color: transparent;
+  -webkit-text-stroke: 0.7px #FFCC00;
+}
+
+.signup span {
+  font-weight: 800;
+}
+
+/* Section one - media queries */
+
+@media screen and (max-width: 1439px) {
+
+  .blackFriday {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    font-size: 3rem;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signup {
+    position: absolute;
+    top: 52.3%;
+    left: 0;
+    width: 100%;
+    height: 15rem;
+    font-size: 2rem;
+    padding-left: 0;
+    align-items: flex-start !important;
+    justify-content: center;
+  }
+
+  .signup p {
+    margin-top: 2rem !important;
+  }
+
+  .leftHeroCol {
+    padding: 3rem 0 0 2rem;
+    align-items: flex-start !important;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 20rem;
+  }
+
+  .headingDescription {
+    font-size: 1.5rem;
+    font-weight: 300;
+    max-width: 19rem;
+  }
+
+  .midHeroCol img {
+    width: 100%;
+  }
+  .midHeroCol img:hover {
+    transform: none;
+  }
+
+  .rightHeroCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+  }
+
+  form {
+    position: relative;
+    max-width: 90%;
+    margin-top: 10rem !important;
+  }
+
+  .formHeader {
+    font-size: 0.8rem;
+  }
+
+  .frame {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .signup {
+    top: 62.8%;
+  }
+
+  .leftHeroCol {
+    align-items: center !important;
+    justify-content: center;
+  }
+
+  .leftHeroCol h1, .headingDescription {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .form-check-input {
+    width: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .signup {
+    top: 76%;
+    height: 10rem;
+  }
+
+  .midHeroCol img {
+    height: 72.6%;
+  }
+
+  form {
+    margin-top: 1rem !important;
+  }
+
+  .form-check-input {
+    width: 2em;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  .blackFriday {
+    padding-left: 0.5rem;
+  }
+
+  .signup {
+    padding-left: 22rem;
+  }
+
+  .midHeroCol img {
+    margin-left: -4rem;
+  }
+}
+
+
+/* Section two */
+
+.sectionTwoRow, .imageWrapper img {
+  width: 100%;
+}
+
+.imageWrapper img {
+  animation: anim 7s ease-out;
+}
+
+@keyframes anim {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.textWrapper {
+  padding-left: 3rem;
+}
+
+.textWrapper h3, .textWrapper p {
+  max-width: 20rem;
+}
+
+/* Section two - media queries */
+
+@media screen and (max-width: 1439px) {
+  .imageWrapper img {
+    width: 100%;
+  }
+
+  .textWrapper {
+    padding: 2rem;
+  }
+
+  .textWrapper h3, .textWrapper p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .textWrapper h3 {
+    max-width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .textWrapper p {
+    max-width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  .imageWrapper img {
+    width: 100%;
+  }
+
+  .textWrapper {
+    padding-left: 3rem;
+  }
+}
+
+/* Section three */
+
+
+
+/* Section three - media queries */
+
+
+@media screen and (max-width: 1023px) {
+  .videoWrapper {
+    padding: 2rem !important;
+  }
+
+  iframe {
+    width: 100%;
+    height: 170px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  iframe {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  iframe {
+    width: 90%;
+  }
+}
+
+
+/* Section four */
+
+.col-lg-3 {
+  border-right: 1px solid #CACACA;
+}
+
+.howSignupWorks {
+  background-color: #FFCC00;
+  padding: 11rem 0;
+}
+
+.howSignupWorks h3 {
+  font-size: 4rem;
+  font-weight: 600;
+  max-width: 13rem;
+}
+
+.howSignupWorks span {
+  font-weight: 700;
+}
+
+.stepWrapper h5 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.stepWrapper p {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.stepOne, .stepTwo, .stepThree {
+  perspective: 1000px;
+}
+
+.stepInner {
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+}
+.stepInner:hover {
+  transform: rotateY(180deg);
+}
+
+.stepFront {
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.stepBack {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  margin-top: -36.4rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 204, 0, 0.5);
+}
+
+/* Section four - media queries */
+
+@media screen and (max-width: 1023px) {
+  .col-lg-3 {
+    border-right: none;
+  }
+
+  .howSignupWorks, .stepInner {
+    padding: 2rem 0;
+  }
+
+  .stepInner:hover {
+    transform: none;
+  }
+
+  .stepFront {
+    align-items: center !important;
+  }
+
+  .stepBack {
+    display: none !important;
+  }
+
+  .stepWrapper h5 {
+    padding: 1rem 0 !important;
+  }
+
+  .stepWrapper p {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .howSignupWorks h3 {
+    max-width: 100%;
+  }
+}
